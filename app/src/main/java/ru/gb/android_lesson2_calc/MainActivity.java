@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ResourceCursorAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.BreakIterator;
 
@@ -26,7 +27,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         initInfo();
-
+        pointButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String result = infoTextView.getText().toString();
+                if (!result.contains(".")) {
+                    infoTextView.append(".");
+                } else Toast.makeText(MainActivity.this, "Error", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     public void initInfo() {
@@ -38,10 +47,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void onNumberClick(View view) {
         Button buttons = (Button) view;
+        String number = infoTextView.getText().toString();
         infoTextView.append(buttons.getText());
-    }
 
+    }
 }
+
+
 
 
 
