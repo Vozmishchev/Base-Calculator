@@ -11,8 +11,9 @@
         android:id="@+id/info_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFC800"
+        android:background="#0D98CF"
         android:padding="30dp"
+        android:textAlignment="textEnd"
         android:textColor="@color/black"
         android:textSize="30sp" />
 
@@ -29,6 +30,8 @@
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:onClick="onNumberClick"
             android:text="1" />
 
         <Button
@@ -38,6 +41,8 @@
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:onClick="onNumberClick"
             android:text="2" />
 
         <Button
@@ -47,6 +52,8 @@
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:onClick="onNumberClick"
             android:text="3" />
 
         <Button
@@ -56,6 +63,7 @@
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:layout_weight="1"
+            android:backgroundTint="@color/teal_200"
             android:text="+" />
 
     </LinearLayout>
@@ -72,6 +80,8 @@
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:onClick="onNumberClick"
             android:text="4" />
 
         <Button
@@ -81,6 +91,8 @@
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:onClick="onNumberClick"
             android:text="5" />
 
         <Button
@@ -90,6 +102,8 @@
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:onClick="onNumberClick"
             android:text="6" />
 
         <Button
@@ -99,6 +113,7 @@
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:layout_weight="1"
+            android:backgroundTint="@color/teal_200"
             android:text="-" />
 
     </LinearLayout>
@@ -115,6 +130,8 @@
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:onClick="onNumberClick"
             android:text="7" />
 
         <Button
@@ -124,6 +141,8 @@
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:onClick="onNumberClick"
             android:text="8" />
 
         <Button
@@ -133,6 +152,8 @@
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:onClick="onNumberClick"
             android:text="9" />
 
         <Button
@@ -142,6 +163,7 @@
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:layout_weight="1"
+            android:backgroundTint="@color/teal_200"
             android:text="/" />
 
     </LinearLayout>
@@ -158,6 +180,7 @@
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:layout_weight="1"
+            android:backgroundTint="@color/teal_200"
             android:text="." />
 
         <Button
@@ -167,6 +190,8 @@
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:onClick="onNumberClick"
             android:text="0" />
 
         <Button
@@ -176,6 +201,7 @@
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:layout_weight="1"
+            android:backgroundTint="#D500F9"
             android:text="=" />
 
         <Button
@@ -185,6 +211,7 @@
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:layout_weight="1"
+            android:backgroundTint="@color/teal_200"
             android:text="*" />
 
     </LinearLayout>
