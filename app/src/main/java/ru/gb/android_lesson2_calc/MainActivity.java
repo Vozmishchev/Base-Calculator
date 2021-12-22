@@ -36,6 +36,13 @@ public class MainActivity extends AppCompatActivity {
                 } else Toast.makeText(MainActivity.this, "Error", Toast.LENGTH_SHORT).show();
             }
         });
+
+        clearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                infoTextView.setText(" ");
+            }
+        });
     }
 
     public void initInfo() {
