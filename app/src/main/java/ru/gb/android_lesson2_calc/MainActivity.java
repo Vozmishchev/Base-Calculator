@@ -1,24 +1,24 @@
 package ru.gb.android_lesson2_calc;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.res.Resources;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ResourceCursorAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.text.BreakIterator;
-
 public class MainActivity extends AppCompatActivity {
-    private Button oneButton;
     private TextView infoTextView;
     private Button clearButton;
     private Button pointButton;
     private Button equalityButton;
+    private static final String NUMBER_KEY = "number_key";
+    private String number;
+
+
 
 
     @Override
@@ -26,7 +26,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        findViewById(R.id.push_button).setOnClickListener(v -> {
+            Intent intent = new Intent(this, SecondActivity.class);
+            intent.putExtra("name", infoTextView.getText().toString());
+            startActivity(intent);
+        });
+
         initInfo();
+
         pointButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,6 +50,19 @@ public class MainActivity extends AppCompatActivity {
                 infoTextView.setText(" ");
             }
         });
+
+        if (savedInstanceState != null && savedInstanceState.containsKey(NUMBER_KEY)) {
+            number = savedInstanceState.getString(NUMBER_KEY);
+            infoTextView.setText(number);
+        }
+
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString(NUMBER_KEY, infoTextView.getText().toString());
+
     }
 
     public void initInfo() {
@@ -54,11 +74,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void onNumberClick(View view) {
         Button buttons = (Button) view;
-        String number = infoTextView.getText().toString();
         infoTextView.append(buttons.getText());
-
     }
 }
+
+
+
+
+
 
 
 

@@ -5,15 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingTop="50dp">
+    android:paddingTop="16dp">
 
     <TextView
         android:id="@+id/info_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#0D98CF"
-        android:padding="30dp"
-        android:textAlignment="textEnd"
+        android:padding="16dp"
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="30sp" />
 
@@ -63,7 +63,7 @@
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/teal_200"
+            android:backgroundTint="@color/purple_500"
             android:text="+" />
 
     </LinearLayout>
@@ -113,7 +113,7 @@
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/teal_200"
+            android:backgroundTint="@color/purple_500"
             android:text="-" />
 
     </LinearLayout>
@@ -163,7 +163,7 @@
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/teal_200"
+            android:backgroundTint="@color/purple_500"
             android:text="/" />
 
     </LinearLayout>
@@ -180,7 +180,7 @@
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/teal_200"
+            android:backgroundTint="@color/purple_500"
             android:onClick="onNumberClick"
             android:text="." />
 
@@ -202,7 +202,7 @@
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:layout_weight="1"
-            android:backgroundTint="#D500F9"
+            android:backgroundTint="#881B9A"
             android:text="=" />
 
         <Button
@@ -212,7 +212,8 @@
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/teal_200"
+            android:backgroundTint="@color/purple_500"
+            android:textStyle="bold"
             android:text="*" />
 
     </LinearLayout>
@@ -223,7 +224,20 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="3dp"
         android:layout_marginRight="3dp"
-        android:text="clear" />
+        android:text="clear"
+        android:backgroundTint="#851818"/>
+
+    <Button
+        android:id="@+id/push_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:text="Push me"
+        android:textColor="@color/black"
+        android:backgroundTint="#C8A221"/>
+
 
 
 
