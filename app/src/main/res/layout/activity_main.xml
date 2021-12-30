@@ -53,14 +53,11 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/addition_button"
+            style="@style/button_numbers.operation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/button_margin_size"
-            android:layout_marginRight="@dimen/button_margin_size"
             android:layout_weight="1"
-            android:backgroundTint="@color/purple_500"
-            android:text="+"
-            app:cornerRadius="@dimen/button_corner_radius" />
+            android:text="+" />
 
     </LinearLayout>
 
@@ -98,14 +95,12 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/subtraction_button"
+            style="@style/button_numbers.operation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/button_margin_size"
-            android:layout_marginRight="@dimen/button_margin_size"
             android:layout_weight="1"
-            android:backgroundTint="@color/purple_500"
-            android:text="-"
-            app:cornerRadius="@dimen/button_corner_radius" />
+
+            android:text="-" />
 
     </LinearLayout>
 
@@ -143,14 +138,11 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/division_button"
+            style="@style/button_numbers.operation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/button_margin_size"
-            android:layout_marginRight="@dimen/button_margin_size"
             android:layout_weight="1"
-            android:backgroundTint="@color/purple_500"
-            android:text="/"
-            app:cornerRadius="@dimen/button_corner_radius" />
+            android:text="/" />
 
     </LinearLayout>
 
@@ -161,15 +153,12 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/point_button"
+            style="@style/button_numbers.operation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/button_margin_size"
-            android:layout_marginRight="@dimen/button_margin_size"
             android:layout_weight="1"
-            android:backgroundTint="@color/purple_500"
             android:onClick="onNumberClick"
-            android:text="."
-            app:cornerRadius="@dimen/button_corner_radius" />
+            android:text="." />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/zero_button"
@@ -193,15 +182,12 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/multiplication_button"
+            style="@style/button_numbers.operation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/button_margin_size"
-            android:layout_marginRight="@dimen/button_margin_size"
             android:layout_weight="1"
-            android:backgroundTint="@color/purple_500"
             android:text="*"
-            android:textStyle="bold"
-            app:cornerRadius="@dimen/button_corner_radius" />
+            android:textStyle="bold" />
 
     </LinearLayout>
 
