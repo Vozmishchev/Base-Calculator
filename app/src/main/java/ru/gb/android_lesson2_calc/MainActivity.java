@@ -18,9 +18,6 @@ public class MainActivity extends AppCompatActivity {
     private static final String NUMBER_KEY = "number_key";
     private String number;
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,14 +52,12 @@ public class MainActivity extends AppCompatActivity {
             number = savedInstanceState.getString(NUMBER_KEY);
             infoTextView.setText(number);
         }
-
     }
 
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putString(NUMBER_KEY, infoTextView.getText().toString());
-
     }
 
     public void initInfo() {
@@ -76,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
         Button buttons = (Button) view;
         infoTextView.append(buttons.getText());
     }
+
 }
 
 
