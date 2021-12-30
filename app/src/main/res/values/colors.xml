@@ -10,4 +10,5 @@
     <color name="red_black">#851818</color>
     <color name="yellow">#C8A221</color>
     <color name="pink_black">#881B9A</color>
+    <color name="textViewResult_background_color">#0D98CF</color>
 </resources>

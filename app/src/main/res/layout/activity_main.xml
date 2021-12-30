@@ -11,7 +11,7 @@
         android:id="@+id/info_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#0D98CF"
+        android:background="@color/textViewResult_background_color"
         android:padding="@dimen/padding_size"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -25,32 +25,27 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/one_button"
+            style="@style/button_numbers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/button_margin_size"
-            android:layout_marginRight="@dimen/button_margin_size"
             android:layout_weight="1"
-            android:backgroundTint="@color/black"
             android:onClick="onNumberClick"
             android:text="1" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/two_button"
+            style="@style/button_numbers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/button_margin_size"
-            android:layout_marginRight="@dimen/button_margin_size"
             android:layout_weight="1"
-            android:backgroundTint="@color/black"
             android:onClick="onNumberClick"
             android:text="2" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/three_button"
+            style="@style/button_numbers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/button_margin_size"
-            android:layout_marginRight="@dimen/button_margin_size"
             android:layout_weight="1"
             android:backgroundTint="@color/black"
             android:onClick="onNumberClick"
@@ -64,7 +59,8 @@
             android:layout_marginRight="@dimen/button_margin_size"
             android:layout_weight="1"
             android:backgroundTint="@color/purple_500"
-            android:text="+" />
+            android:text="+"
+            app:cornerRadius="@dimen/button_corner_radius" />
 
     </LinearLayout>
 
@@ -75,34 +71,28 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/four_button"
+            style="@style/button_numbers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/button_margin_size"
-            android:layout_marginRight="@dimen/button_margin_size"
             android:layout_weight="1"
-            android:backgroundTint="@color/black"
             android:onClick="onNumberClick"
             android:text="4" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/five_button"
+            style="@style/button_numbers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/button_margin_size"
-            android:layout_marginRight="@dimen/button_margin_size"
             android:layout_weight="1"
-            android:backgroundTint="@color/black"
             android:onClick="onNumberClick"
             android:text="5" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/six_button"
+            style="@style/button_numbers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/button_margin_size"
-            android:layout_marginRight="@dimen/button_margin_size"
             android:layout_weight="1"
-            android:backgroundTint="@color/black"
             android:onClick="onNumberClick"
             android:text="6" />
 
@@ -114,7 +104,8 @@
             android:layout_marginRight="@dimen/button_margin_size"
             android:layout_weight="1"
             android:backgroundTint="@color/purple_500"
-            android:text="-" />
+            android:text="-"
+            app:cornerRadius="@dimen/button_corner_radius" />
 
     </LinearLayout>
 
@@ -125,34 +116,28 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/seven_button"
+            style="@style/button_numbers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/button_margin_size"
-            android:layout_marginRight="@dimen/button_margin_size"
             android:layout_weight="1"
-            android:backgroundTint="@color/black"
             android:onClick="onNumberClick"
             android:text="7" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/eight_button"
+            style="@style/button_numbers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/button_margin_size"
-            android:layout_marginRight="@dimen/button_margin_size"
             android:layout_weight="1"
-            android:backgroundTint="@color/black"
             android:onClick="onNumberClick"
             android:text="8" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/nine_button"
+            style="@style/button_numbers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/button_margin_size"
-            android:layout_marginRight="@dimen/button_margin_size"
             android:layout_weight="1"
-            android:backgroundTint="@color/black"
             android:onClick="onNumberClick"
             android:text="9" />
 
@@ -164,7 +149,8 @@
             android:layout_marginRight="@dimen/button_margin_size"
             android:layout_weight="1"
             android:backgroundTint="@color/purple_500"
-            android:text="/" />
+            android:text="/"
+            app:cornerRadius="@dimen/button_corner_radius" />
 
     </LinearLayout>
 
@@ -182,16 +168,15 @@
             android:layout_weight="1"
             android:backgroundTint="@color/purple_500"
             android:onClick="onNumberClick"
-            android:text="." />
+            android:text="."
+            app:cornerRadius="@dimen/button_corner_radius" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/zero_button"
+            style="@style/button_numbers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/button_margin_size"
-            android:layout_marginRight="@dimen/button_margin_size"
             android:layout_weight="1"
-            android:backgroundTint="@color/black"
             android:onClick="onNumberClick"
             android:text="0" />
 
@@ -203,7 +188,8 @@
             android:layout_marginRight="@dimen/button_margin_size"
             android:layout_weight="1"
             android:backgroundTint="@color/pink_black"
-            android:text="=" />
+            android:text="="
+            app:cornerRadius="@dimen/button_corner_radius" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/multiplication_button"
@@ -213,8 +199,9 @@
             android:layout_marginRight="@dimen/button_margin_size"
             android:layout_weight="1"
             android:backgroundTint="@color/purple_500"
+            android:text="*"
             android:textStyle="bold"
-            android:text="*" />
+            app:cornerRadius="@dimen/button_corner_radius" />
 
     </LinearLayout>
 
@@ -224,18 +211,19 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/button_margin_size"
         android:layout_marginRight="@dimen/button_margin_size"
+        android:backgroundTint="@color/red_black"
         android:text="clear"
-        android:backgroundTint="@color/red_black"/>
+        app:cornerRadius="@dimen/button_corner_radius" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/push_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/button_clear_marginLeft_size"
-        android:layout_marginRight="@dimen/button_clear_marginRight_size"
         android:layout_marginTop="@dimen/button_clear_marginLeft_size"
+        android:layout_marginRight="@dimen/button_clear_marginRight_size"
+        android:backgroundTint="@color/yellow"
         android:text="Push me"
-        android:textColor="@color/black"
-        android:backgroundTint="@color/yellow"/>
+        android:textColor="@color/black" />
 
 </LinearLayout>
