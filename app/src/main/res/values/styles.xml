@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="button_numbers">
+        <item name="android:layout_marginLeft">@dimen/button_margin_size</item>
+        <item name="android:layout_marginRight">@dimen/button_margin_size</item>
+        <item name="cornerRadius">@dimen/button_corner_radius</item>
+        <item name="android:backgroundTint">@color/black</item>
+    </style>
+
+    <style name="button_numbers.operation">
+        <item name="android:backgroundTint">@color/purple_500</item>
+    </style>
+
+</resources>

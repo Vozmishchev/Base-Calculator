@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingTop="@dimen/padding_size"
-    android:padding="@dimen/padding_half_size"
+    android:paddingTop="@dimen/padding_half_size"
     android:background="#C858771E">
 
     <TextView
@@ -15,14 +16,14 @@
         android:layout_height="wrap_content"
         android:background="@drawable/input_text"
         android:padding="@dimen/padding_size"
+        android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="@dimen/info_text_size"
-        android:gravity="right"/>
+        android:textSize="@dimen/info_text_size" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="@dimen/margin_size_layout"
         android:orientation="horizontal">
 
         <com.google.android.material.button.MaterialButton
@@ -47,7 +48,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/black"
             android:text="3" />
 
         <com.google.android.material.button.MaterialButton
@@ -196,7 +196,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/button_clear_marginLeft_size"
-        android:layout_marginTop="@dimen/button_clear_marginLeft_size"
+        android:layout_marginTop="5dp"
         android:layout_marginRight="@dimen/button_clear_marginRight_size"
         android:backgroundTint="@color/yellow"
         android:text="Push me"

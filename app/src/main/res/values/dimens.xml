@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="info_text_size">32sp</dimen>
+    <dimen name="button_margin_size">3dp</dimen>
+    <dimen name="padding_size">16dp</dimen>
+    <dimen name="padding_half_size">8dp</dimen>
+    <dimen name="margin_size_layout">8dp</dimen>
+    <dimen name="button_clear_marginLeft_size">50dp</dimen>
+    <dimen name="button_clear_marginTop_size">30dp</dimen>
+    <dimen name="button_clear_marginRight_size">50dp</dimen>
+    <dimen name="button_corner_radius">20dp</dimen>
+
+</resources>
