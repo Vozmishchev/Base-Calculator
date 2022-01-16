@@ -181,6 +181,12 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/padding_half_size">
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/clear_button"
         android:layout_width="match_parent"
@@ -189,17 +195,20 @@
         android:layout_marginRight="@dimen/button_margin_size"
         android:backgroundTint="@color/red_black"
         android:text="clear"
+        android:layout_weight="@integer/material_motion_duration_long_1"
         app:cornerRadius="@dimen/button_corner_radius" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/push_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/button_clear_marginLeft_size"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="@dimen/button_clear_marginRight_size"
+        android:layout_marginLeft="@dimen/button_margin_size"
+
+        android:layout_marginRight="@dimen/button_margin_size"
         android:backgroundTint="@color/yellow"
         android:text="Push me"
+        android:layout_weight="@integer/material_motion_duration_long_1"
         android:textColor="@color/black" />
+</LinearLayout>
 
 </LinearLayout>
